@@ -20,7 +20,7 @@
     'version': '0.3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr', 'web', 'security_rules'],
+    'depends': ['base', 'hr', 'web'],
 
     # always loaded
     'data': [
