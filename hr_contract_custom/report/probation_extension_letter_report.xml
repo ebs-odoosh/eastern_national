@@ -11,7 +11,6 @@
                 file="hr_contract_custom.probation_extension_letter_report"
                 print_report_name="'Probation Extension Letter - '+(object.related_employee.name if object.related_employee.name else '')"
                 attachment="'Probation Extension Letter - '+(object.related_employee.name if object.related_employee.name else '')+'.pdf'"
-                groups="security_rules.group_hc_employee"
 
         />
 
