@@ -32,7 +32,7 @@
                     </group>
                     <footer>
                         <button name="create_appraisals" string="Generate Appraisal" type="object" class="btn-primary"/>
-<!--                        <button name="remove_all" string="Remove All Employees" type="object" class="btn-secondary"/>
+<!--                        <button name="remove_all" string="Remove All Employees" type="object" class="btn-secondary"/>-->
 <!--                        <button name="%(create_hr_mass_appraisal_empty_view_action)d"
                                 string="Remove All Employees"
                                 type="action"
