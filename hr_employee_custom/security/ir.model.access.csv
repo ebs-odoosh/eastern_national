@@ -7,7 +7,6 @@ access_user_hr_housing,hr_employee_custom.hr_housing,model_hr_housing,,1,1,1,1
 access_user_hr_housing_type,hr_employee_custom.hr_housing_type,model_hr_housing_type,,1,1,1,1
 access_user_hr_housing_category,hr_employee_custom.hr_housing_category,model_hr_housing_category,,1,1,1,1
 access_user_hr_housing_attachment,hr_employee_custom.hr_housing_attachment,model_hr_housing_attachment,,1,1,1,0
-access_user_hr_housing_attachment2,hr_employee_custom.hr_housing_attachment,model_hr_housing_attachment,security_rules.group_hc_employee,1,1,1,1
 access_user_hr_contract_employment_type,hr_employee_custom.hr_contract_employment_type,model_hr_contract_employment_type,,1,1,1,1
 access_sap_event_type,hr_employee_custom.sap_event_type,model_sap_event_type,,1,1,1,1
 access_sap_event_type_reason,hr_employee_custom.sap_event_type_reason,model_sap_event_type_reason,,1,1,1,1
