@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr','website','hr_appraisal','hr_contract','hr_employee_custom','approvals','hr_recruitment','documents','survey','approvals','hr_org_chart_overview','hr_core'],
+    'depends': ['base','hr','website','hr_appraisal','hr_contract','hr_employee_custom','approvals','hr_recruitment','documents','survey','approvals','hr_org_chart_overview'],
 
     # always loaded
     'data': [
