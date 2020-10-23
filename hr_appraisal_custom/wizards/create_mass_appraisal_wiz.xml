@@ -2,6 +2,15 @@
 <odoo>
     <data>
 
+        <record id="create_hr_mass_appraisal_empty_view_action" model="ir.actions.act_window">
+            <field name="name">Create Appraisals</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.mass.appraisal.empty</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="create_hr_mass_appraisal_empty_view_form"/>
+            <field name="target">new</field>
+        </record>
+		
         <record id="create_hr_mass_appraisal_view_form" model="ir.ui.view">
             <field name="name">create.hr.mass.appraisal.form</field>
             <field name="model">hr.mass.appraisal</field>
@@ -72,14 +81,6 @@
             <field name="res_model">hr.mass.appraisal</field>
             <field name="view_mode">form</field>
             <field name="view_id" ref="create_hr_mass_appraisal_view_form"/>
-            <field name="target">new</field>
-        </record>
-        <record id="create_hr_mass_appraisal_empty_view_action" model="ir.actions.act_window">
-            <field name="name">Create Appraisals</field>
-            <field name="type">ir.actions.act_window</field>
-            <field name="res_model">hr.mass.appraisal.empty</field>
-            <field name="view_mode">form</field>
-            <field name="view_id" ref="create_hr_mass_appraisal_empty_view_form"/>
             <field name="target">new</field>
         </record>
 
