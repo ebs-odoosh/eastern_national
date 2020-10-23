@@ -736,7 +736,7 @@
 
         <menuitem id="approvals.approvals_approval_menu_all" parent="approvals.approvals_menu_manager"
                   name="All Approvals" action="approvals.approval_request_action_all" sequence="20"
-                  groups="security_rules.group_strata_hc"/>
+                  />
 
 
         <!-- actions opening views on models -->
