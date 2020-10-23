@@ -54,7 +54,7 @@ class HrAppraisal(models.Model):
                                                    string='Deleted Appraisal Objectives')
     appraisal_training = fields.One2many('hr.training', 'related_appraisal', string='Appraisal Training')
 
-    appraisal_form = fields.Many2one('hr.appraisal.form', 'Appraisal Form', required=True)
+    appraisal_form = fields.Many2one('hr.appraisal.form', 'Appraisal Form', required=False)
 
     related_period = fields.Many2one(related='appraisal_form.period_id')
 
@@ -122,7 +122,7 @@ class HrAppraisal(models.Model):
     can_complete = fields.Boolean(related='stage_id.can_complete')
     is_completed = fields.Boolean(
         string='Is Completed',
-        required=True, default=False)
+        required=False, default=False)
 
     # pip fields
     area_development = fields.Text('Employee Areas of Development')

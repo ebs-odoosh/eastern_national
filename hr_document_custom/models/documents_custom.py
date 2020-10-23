@@ -74,7 +74,7 @@ class DocumentsCustom(models.Model):
         required=False)
     start_date = fields.Date(
         string='Start Date',
-        required=True)
+        required=False)
     passport_place_issue = fields.Char(
         string='Passport Place of Issue',
         required=False)
