@@ -32,63 +32,63 @@
             </field>
         </record>
 
-        <record id="custom_contacts_view_employee" model="ir.ui.view">
-            <field name="name">custom.contacts.view.employee</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="base.view_partner_form"/>
-            <field name="arch" type="xml">
-                <!--                <xpath expr="//sheet" position="before">-->
-                <sheet position="before">
-                    <header>
-                        <button string="Approve" class="btn btn-primary" type="object" name="state_approve"
-                                attrs="{'invisible': [('state','=', 'approved')]}"
-                                groups="security_rules.group_hc_employee"/>
-                        <button string="Reject" class="btn btn-primary" type="object" name="log_and_reject"
-                                attrs="{'invisible': [('state','=', 'reject')]}"
-                                groups="security_rules.group_hc_employee"/>
-                        <button string="Set Pending" class="btn btn-primary" type="object" name="state_pending"
-                                attrs="{'invisible': [('state','=', 'pending')]}"
-                                groups="security_rules.group_hc_employee"/>
-                        <field name="state" widget="statusbar"/>
-                    </header>
-                </sheet>
+<!--        <record id="custom_contacts_view_employee" model="ir.ui.view">-->
+<!--            <field name="name">custom.contacts.view.employee</field>-->
+<!--            <field name="model">res.partner</field>-->
+<!--            <field name="inherit_id" ref="base.view_partner_form"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                &lt;!&ndash;                <xpath expr="//sheet" position="before">&ndash;&gt;-->
+<!--                <sheet position="before">-->
+<!--                    <header>-->
+<!--                        <button string="Approve" class="btn btn-primary" type="object" name="state_approve"-->
+<!--                                attrs="{'invisible': [('state','=', 'approved')]}"-->
+<!--                                groups="security_rules.group_hc_employee"/>-->
+<!--                        <button string="Reject" class="btn btn-primary" type="object" name="log_and_reject"-->
+<!--                                attrs="{'invisible': [('state','=', 'reject')]}"-->
+<!--                                groups="security_rules.group_hc_employee"/>-->
+<!--                        <button string="Set Pending" class="btn btn-primary" type="object" name="state_pending"-->
+<!--                                attrs="{'invisible': [('state','=', 'pending')]}"-->
+<!--                                groups="security_rules.group_hc_employee"/>-->
+<!--                        <field name="state" widget="statusbar"/>-->
+<!--                    </header>-->
+<!--                </sheet>-->
 
-                <field name="type" position="before">
-                    <field name="reject_reason" class="text-danger"
-                           attrs="{'invisible':['|',('reject_reason','=',False),('reject_reason','=','')]}"/>
+<!--                <field name="type" position="before">-->
+<!--                    <field name="reject_reason" class="text-danger"-->
+<!--                           attrs="{'invisible':['|',('reject_reason','=',False),('reject_reason','=','')]}"/>-->
 
-                </field>
-                <!--                <xpath expr="//field[@name='function']" position="before">-->
-                <!--                    <field name="contact_relation_type_id"/>-->
-                <!--                </xpath>-->
-                <xpath expr="//field[@name='parent_id']" position="attributes">
-                    <attribute name="invisible">1</attribute>
-                </xpath>
-                <xpath expr="//field[@name='vat']" position="attributes">
-                    <attribute name="invisible">1</attribute>
-                </xpath>
-                <xpath expr="//field[@name='function']" position="attributes">
-                    <attribute name="invisible">1</attribute>
-                </xpath>
-                <xpath expr="//field[@name='company_type']" position="attributes">
-                    <attribute name="groups">security_rules.group_hc_employee</attribute>
-                </xpath>
-            </field>
-        </record>
+<!--                </field>-->
+<!--                &lt;!&ndash;                <xpath expr="//field[@name='function']" position="before">&ndash;&gt;-->
+<!--                &lt;!&ndash;                    <field name="contact_relation_type_id"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;                </xpath>&ndash;&gt;-->
+<!--                <xpath expr="//field[@name='parent_id']" position="attributes">-->
+<!--                    <attribute name="invisible">1</attribute>-->
+<!--                </xpath>-->
+<!--                <xpath expr="//field[@name='vat']" position="attributes">-->
+<!--                    <attribute name="invisible">1</attribute>-->
+<!--                </xpath>-->
+<!--                <xpath expr="//field[@name='function']" position="attributes">-->
+<!--                    <attribute name="invisible">1</attribute>-->
+<!--                </xpath>-->
+<!--                <xpath expr="//field[@name='company_type']" position="attributes">-->
+<!--                    <attribute name="groups">security_rules.group_hc_employee</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
 
-        <record id="custom_contacts_view_employee2" model="ir.ui.view">
-            <field name="name">custom.contacts.view.employee2</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="base.view_partner_form"/>
-            <field name="priority">99</field>
-            <field name="mode">extension</field>
-            <field name="arch" type="xml">
-                <xpath expr="//field[@name='is_published']" position="attributes">
-                    <attribute name="attrs">{}</attribute>
-                    <attribute name="invisible">1</attribute>
-                </xpath>
-            </field>
-        </record>
+<!--        <record id="custom_contacts_view_employee2" model="ir.ui.view">-->
+<!--            <field name="name">custom.contacts.view.employee2</field>-->
+<!--            <field name="model">res.partner</field>-->
+<!--            <field name="inherit_id" ref="base.view_partner_form"/>-->
+<!--            <field name="priority">99</field>-->
+<!--            <field name="mode">extension</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//field[@name='is_published']" position="attributes">-->
+<!--                    <attribute name="attrs">{}</attribute>-->
+<!--                    <attribute name="invisible">1</attribute>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
 
 
         <record id="view_employee_form_custom" model="ir.ui.view">
