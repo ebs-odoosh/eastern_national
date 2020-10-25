@@ -14,6 +14,7 @@
                 </group>
 
                 <page name="personal_information" position="after">
+                    <field name="invisible_user_role" invisible="1"/>
                     <page name="document" string="Personal Documents" attrs="{'invisible':[('invisible_user_role','=',True)]}">
                         <button name="%(create_contact_document_view_action)d"
                                 string="Create Document"

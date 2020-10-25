@@ -35,7 +35,7 @@
         'cron/document_cron_job.xml',
         'data/sequence.xml',
         'wizards/create_contact_document_wiz.xml',
-        'views/contacts_view_custom.xml',
+        # 'views/contacts_view_custom.xml',
         'views/document_custom.xml',
         'views/document_folder_custom.xml',
         'views/document_types_view.xml',
