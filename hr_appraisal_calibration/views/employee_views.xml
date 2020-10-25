@@ -7,6 +7,7 @@
             <field name="arch" type="xml">
 
                 <page name="document_page" position="after">
+                    <field name="invisible_user_role" invisible="1"/>
                     <page name="document_page" string="Appraisal History" attrs="{'invisible': [('invisible_user_role','=',True)]}">
                         <field name="performance_history">
                             <tree editable="0" create="0" delete="0">
