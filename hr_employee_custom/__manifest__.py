@@ -27,7 +27,7 @@
     'data': [
         'security/ir.model.access.csv',
         # 'views/contact_relation_type_view.xml',
-        # 'views/views.xml',
+        'views/views.xml',
         'views/employee_custom.xml',
         'data/sequence.xml',
         'views/templates.xml',
